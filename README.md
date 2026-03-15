@@ -105,7 +105,7 @@ sudo apt install -y nvidia-driver-570-open nvidia-cuda-toolkit
 Open your terminal (it opens in your Home folder by default). **Do not close this terminal window until you are completely finished.** Run this block to create a dedicated folder, enter it, and download the Fish Speech 1.5 source code:
 ```bash
 mkdir FishSpeech && cd FishSpeech
-wget -qO source.zip [https://github.com/fishaudio/fish-speech/archive/refs/tags/v1.5.0.zip](https://github.com/fishaudio/fish-speech/archive/refs/tags/v1.5.0.zip)
+wget -qO source.zip "[https://github.com/fishaudio/fish-speech/archive/refs/tags/v1.5.0.zip](https://github.com/fishaudio/fish-speech/archive/refs/tags/v1.5.0.zip)"
 unzip -q source.zip && mv fish-speech-1.5.0/* . && mv fish-speech-1.5.0/.* . 2>/dev/null
 rm -rf source.zip fish-speech-1.5.0
 ```
@@ -116,7 +116,7 @@ This creates a safe, isolated Python bubble (`venv`) and installs the Torch Nigh
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install --pre torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/nightly/cu128](https://download.pytorch.org/whl/nightly/cu128)
+pip install --pre torch torchvision torchaudio --index-url "[https://download.pytorch.org/whl/nightly/cu128](https://download.pytorch.org/whl/nightly/cu128)"
 pip install nvidia-npp-cu12
 ```
 
