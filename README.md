@@ -166,6 +166,8 @@ This project is released under the **GNU GPLv3 License**. You are free to use, s
 ---
 
 ## ☕ Support the Forge
-Getting this architecture to run flawlessly on RTX 50-series hardware took weeks of trial, error, and burnt midnight oil. If this repository saved you from dependency hell and got you generating audio instantly, consider supporting the forge:
+I'm not a professional coder, and this project—which began as an effort to get Fish Speech to play nice with Blackwell on Windows—has taken all of my free time and a large portion of my sleep, put my limited social life on pause, and resulted in me cutting my work hours. Once I accomplished the task for myself, I felt I had a responsibility to share it, which is why I spent several more days and sleepless nights developing and thoroughly testing these automated scripts and the accompanying README. I wanted to ensure that anyone with a 50-series GPU—including absolute novices to Linux, the terminal, and AI models—can easily get it to work. Despite the challenges, frustrations, and the recurring feeling that I was doing all of this in vain, I can say that this was ultimately a labor of love.
+
+The next Kubuntu LTS release is just around the corner, and upgrading to it will almost certainly cause this installation to break (if you don't update, it'll be fine). When the release drops, I plan to download it and update the scripts so we can still use Fish Speech. If my work has helped you to achieve your goals and has saved you from hours of dependency hell, consider supporting the forge:
 
 [🔗 **Support Pantreus on Ko-fi**](https://ko-fi.com/pantreus)
