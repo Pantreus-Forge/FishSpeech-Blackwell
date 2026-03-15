@@ -13,7 +13,7 @@ I did the hard work so you don't have to. You have two options:
 ---
 
 ## 🖥️ System Compatibility
-* **Supported OSes:** Ubuntu, Kubuntu, Linux Mint, Pop!_OS, Zorin OS *(22.04 or 24.04 LTS based versions strongly recommended, to ensure Python stability).*
+* **Supported OSes:** Ubuntu, Kubuntu, Linux Mint, Pop!_OS, Zorin OS. *(We strongly recommend using a "Long Term Support" (LTS) release such as 22.04 or 24.04 to ensure Python stability).*
 * **GPU:** NVIDIA RTX 50-Series (Blackwell architecture).
 * **Storage:** ~10GB of free space (for drivers, environments, and models).
 
@@ -102,13 +102,14 @@ sudo apt install -y nvidia-driver-570-open nvidia-cuda-toolkit
 **Reboot your system before proceeding to Step 2.**
 
 **Step 2: Create Directory & Clone the Source**
-Open your terminal wherever you want the AI to live (e.g., your Home folder). Run this block to create a dedicated folder, enter it, and download the Fish Speech 1.5 source code:
+Open your terminal (it opens in your Home folder by default). **Do not close this terminal window until you are completely finished.** Run this block to create a dedicated folder, enter it, and download the Fish Speech 1.5 source code:
 ```bash
 mkdir FishSpeech && cd FishSpeech
 wget -qO source.zip [https://github.com/fishaudio/fish-speech/archive/refs/tags/v1.5.0.zip](https://github.com/fishaudio/fish-speech/archive/refs/tags/v1.5.0.zip)
 unzip -q source.zip && mv fish-speech-1.5.0/* . && mv fish-speech-1.5.0/.* . 2>/dev/null
 rm -rf source.zip fish-speech-1.5.0
 ```
+*(Failsafe: If you accidentally close your terminal during any of the following steps, open a new one and type `cd FishSpeech` to get back inside the AI folder before continuing).*
 
 **Step 3: Build Virtual Environment & Install Blackwell PyTorch Engine**
 This creates a safe, isolated Python bubble (`venv`) and installs the Torch Nightly engine (cu128) that understands the 50-series architecture.
