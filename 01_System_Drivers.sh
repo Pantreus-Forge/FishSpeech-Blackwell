@@ -9,8 +9,14 @@
 # If you fork, share, or use this in your own project, credit is required.
 # ==============================================================================
 
-# AUTO-TERMINAL LAUNCHER
-if [ -t 0 ]; then :; else konsole --hold -e "$0" "$@"; exit; fi
+# 1. UNIVERSAL TERMINAL LAUNCHER
+if [ -t 0 ]; then :; else
+    for term in konsole gnome-terminal xfce4-terminal xterm; do
+        if command -v $term >/dev/null 2>&1; then
+            $term --hold -e "$0" "$@"; exit
+        fi
+    done
+fi
 
 echo "========================================================"
 echo "      BLACKWELL SUPREMACY: DRIVER INSTALLATION          "
@@ -25,6 +31,6 @@ fi
 
 echo "Starting Blackwell Driver Deployment (Cold Start)..."
 sudo add-apt-repository ppa:graphics-drivers/ppa -y
-sudo apt update && sudo apt install -y build-essential cmake ffmpeg libavcodec-dev libavformat-dev libavutil-dev libswresample-dev git python3-pip python3-venv
+sudo apt update && sudo apt install -y build-essential cmake ffmpeg libavcodec-dev libavformat-dev libavutil-dev libswresample-dev pkg-config python3-dev portaudio19-dev git python3-pip python3-venv
 sudo apt install -y nvidia-driver-570-open nvidia-cuda-toolkit
 echo "🔱 PHASE 1 COMPLETE. REBOOT YOUR SYSTEM NOW."
