@@ -13,7 +13,7 @@ I did the hard work so you don't have to. You have two options:
 ---
 
 ## 🖥️ System Compatibility
-* **Supported OSes:** Ubuntu, Kubuntu, Linux Mint, Pop!_OS, Zorin OS. *(We strongly recommend using a "Long Term Support" (LTS) release such as 22.04 or 24.04 to ensure Python stability).*
+* **Supported OSes:** Ubuntu, Kubuntu, Linux Mint, Pop!_OS, Zorin OS. *(I strongly recommend using a "Long Term Support" (LTS) release such as 22.04 or 24.04 to ensure Python stability).*
 * **GPU:** NVIDIA RTX 50-Series (Blackwell architecture).
 * **Storage:** ~10GB of free space (for drivers, environments, and models).
 
