@@ -99,7 +99,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa -y
 sudo apt update && sudo apt install -y build-essential cmake ffmpeg libavcodec-dev libavformat-dev libavutil-dev libswresample-dev pkg-config python3-dev portaudio19-dev git python3-pip python3-venv
 sudo apt install -y nvidia-driver-570-open nvidia-cuda-toolkit
 ```
-**Reboot your system before proceeding to Step 2.**
+> **⚠️ REBOOT YOUR SYSTEM BEFORE PROCEEDING TO STEP 2. ⚠️**
 
 **Step 2: Create Directory & Clone the Source**
 Open your terminal (it opens in your Home folder by default). **Do not close this terminal window until you are completely finished.** Run this block to create a dedicated folder, enter it, and download the Fish Speech 1.5 source code:
